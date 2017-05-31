@@ -3,16 +3,20 @@
 	padding: 0;
 	list-style: none;
 	text-decoration: none;
-	color: #fff;
 }
 
 body {
 	background-color: #000;
-
 }
 
-h1,ul{
+h1,h2,h3 {
 	text-align: center;
+	color: #fff;
+}
+
+ul{
+	text-align: center;
+	padding:0;	
 }
 
 li{
@@ -23,7 +27,7 @@ nav {
 	margin-top: 20px;
 	padding: 10px 0;
 	border-top: 1px solid #969696;
-	border-bottom: 1px slid #969696;
+	border-bottom: 1px solid #969696;
 	margin-bottom: 20px;
 }
 
@@ -33,13 +37,99 @@ nav {
 	margin-top: 30px;
 }
 
+span{
+	color: #fff;
+}
+
 p{
-	margint-top: 20px;
-	tex-align: center;
+	margin-top: 20px;
+	text-align: center;
+	color: #fff;
+	margin-right: 20px;
 }
 
 a{
-font-size: 20px;
-margin-right: 20px;
+	font-size: 20px;
+	text-decoration: none;
+	color: #fff;
+}
+
+a:hover{
+	text-decoration: underline
+}
+
+.menu a {
+	margin-right: 30px;
+}
+
+.profile {
+	color: #fff;
+}
+
+.button{
+	color: #fff;
+	
+}
+
+.posts{
+  max-width: 500px;
+  margin: 0 auto;
+}
+.posts h3{
+  background-color: #8b7e66;
+  padding: 5px 0;
+  padding-left: 2px;
+}
+.posts h2{
+  text-align:center;
+}
+.posts .index ul li{
+  padding: 4px;
+}
+.posts .index ul li>span{
+  float:right;
+}
+.posts .index ul li:nth-child(odd){
+  background-color: #000;
+}
+.posts .index ul li:nth-child(even){
+  background-color: #8b7e66;
+}
+.posts .show .body{
+  min-height:70px;
+  white-space: pre-wrap;
+}
+.posts .show .time{
+  float:right;
+  margin:2px;
+  padding: 5px 10px;
+  background-color: #E4E4E4;
+  border: 0 solid black;
+  border-radius: 5px;
+}
+.posts .show .btn_delete{
+  display:inline-block;
+}
+.posts .show .tools{
+  margin-bottom:20px;
+}
+.posts .posts_form{
+  display:block;
+  width: 400px;
+  margin: 0 auto;
+  margin-bottom:20px;
+}
+.posts .posts_form label{
+  display:block;
+  margin:5px 0;
+}
+.posts .posts_form input[type="text"]{
+  width:400px;
+}
+.posts .posts_form textarea{
+  display:block;
+  margin-bottom:10px;
+  width:400px;
+  height: 200px;
 }
 

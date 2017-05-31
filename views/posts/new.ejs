@@ -6,17 +6,21 @@
   <body>
     <% include ../body.ejs %>
     <br>
+    <div class = "posts">
       <div class ="new">
-        <h3>게시글 남기기</h3>
+        <h2>게시글 남기기</h2><br>
+        <center>
         <form class ="posts_form" action ="/posts" method = "post">
-          <label>제목</label><br>
+          <label><a>제목</a></label>
           <input type="text" name ="post[title]" size = "80" value=""><br><br>
-          <label>내용</label><br>
+          <label><a>내용</a></label>
           <textarea name ="post[body]" cols="80" rows="20" ></textarea><br>
           <button type = "submit">확인</button>
           <a href="/posts"><button>취소</button></a>
         </form>
+        </center>
       </div>
+    </div>
     
   </body>
 </html>
