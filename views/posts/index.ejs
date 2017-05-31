@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <% include ../header.ejs %>
+  </head>
+  <body>
+    <% include ../body.ejs %>
+    <br>
+     	<div class="board">
+    		<ul>
+    			<% data.forEach(function(e){ %>
+    			<li>
+	    			<a href="/posts/<%= e._id %>"><%= e.title %></a>
+	    			<span><%= e.createdAt.toLocaleDateString() %></span>
+	    		</li>	
+	    		<% }) %>
+    		</ul>	
+        <center><a href="posts/new" style ="width:200; height:100; color:black"><button><font color ="black">글쓰기</font></button></a></center>
+	   	</div>
+	</body>
+</html>

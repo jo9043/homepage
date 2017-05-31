@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <% include ../header.ejs %>
+  </head>
+  <body>
+    <% include ../body.ejs %>
+    <br>
+      <div class ="new">
+        <h3>게시글 남기기</h3>
+        <form class ="posts_form" action ="/posts" method = "post">
+          <label>제목</label><br>
+          <input type="text" name ="post[title]" size = "80" value=""><br><br>
+          <label>내용</label><br>
+          <textarea name ="post[body]" cols="80" rows="20" ></textarea><br>
+          <button type = "submit">확인</button>
+          <a href="/posts"><button>취소</button></a>
+        </form>
+      </div>
+    
+  </body>
+</html>
