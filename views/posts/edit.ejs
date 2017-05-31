@@ -6,19 +6,19 @@
   <body>
     <% include ../body.ejs %>
     <br>
-    
+    <div class ="posts">
       <div class="edit">
         <h3>게시글 수정</h3>
         <form class="posts_form" action="/posts/<%=data._id%>?_method=put" method="post">
-          <label>제목</label><br>
+          <label><a>제목</a></label><br>
           <input type="text" name="post[title]" size ="80" value="<%=data.title%>"><br><br>
-          <label>내용</label><br>
+          <label><a>내용</a></label><br>
           <textarea name="post[body]" cols="80" rows="20"><%=data.body%></textarea><br>
           <button type="submit">확인</button>
-        </form>
+        
 
-        <a href="/posts/<%=data._id%>"><button>취소</button><a>
+        <a href="/posts/<%=data._id%>"><button>취소</button></form>
       </div>
-   
+    </div>
   </body>
 </html>

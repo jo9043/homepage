@@ -16,17 +16,24 @@ db.on("error",function (err) {
   console.log("DB ERROR :", err);
 });
 
+process.on('uncaughtException', function(err){
+  console.log(err);
+})
+
 var postSchema = mongoose.Schema({
   title: {type:String, required:true},
   body: {type:String, required:true},
   createdAt: {type:Date, default:Date.now},
   updatedAt: Date
 });
+
 var Post = mongoose.model('post',postSchema);
 
-app.engine('html',require('ejs').renderFile);
+//app.engine('html',require('ejs').renderFile);
+
 app.set('view engine', 'ejs');
 app.set('views', './views');
+
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:true}));
