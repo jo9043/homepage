@@ -16,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jo9043/project.git"
+    "url": "git+https://github.com/jo9043/homepage.git"
   },
   "keywords": [
     "blog"
@@ -24,7 +24,7 @@
   "author": "jo9043@gmail.com",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jo9043/project/issues"
+    "url": "https://github.com/jo9043/homepage/issues"
   },
-  "homepage": "https://github.com/jo9043/project#readme"
+  "homepage": "https://github.com/jo9043/homepage#readme"
 }
